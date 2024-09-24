@@ -6,7 +6,7 @@ import com.alibaba.fastjson2.annotation.JSONType;
 @JSONType(typeKey = "type", seeAlso = {Shape.Triangle.class, Shape.Circle.class})
 public class Shape {
     @JSONType(typeKey = "type", typeName = "triangle", serializeFeatures = JSONWriter.Feature.WriteClassName)
-    public static class Triangle {
+    public static class Triangle extends Shape {
         private int a;
         private int b;
         private int c;
@@ -37,7 +37,7 @@ public class Shape {
     }
 
     @JSONType(typeKey = "type", typeName = "circle", serializeFeatures = JSONWriter.Feature.WriteClassName)
-    public static class Circle {
+    public static class Circle extends Shape {
         private int radius;
 
         public int getRadius() {
