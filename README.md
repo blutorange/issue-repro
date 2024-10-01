@@ -1,5 +1,13 @@
 Simply run `npm install`, followed by `npm run build`.
 
+```sh
+git clone https://github.com/blutorange/issue-repro
+cd issue-repro
+git checkout issue-typescript-missing-type-param
+npm install
+npm run build
+```
+
 ---
 
 Given the input file `src/index.js`:
