@@ -16,7 +16,7 @@ export class MyComponent extends Scope.sub.Box {
 }
 ```
 
-TypeScript generate the following the declaration file `dist/index.ts`:
+TypeScript generate the following the declaration file `dist/index.d.ts`:
 
 ```ts
 declare const MyComponent_base: typeof import("./header.js").Box;
